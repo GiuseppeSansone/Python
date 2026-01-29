@@ -1,0 +1,3 @@
+01/29/2026 04:16:38 PM: INFO: main Zeile:17 User:Ralph Das ist eine info-Level-Nachricht
+01/29/2026 04:16:38 PM: WARNING: main Zeile:18 User:Ralph Das ist eine Warning-Level-Nachricht
+01/29/2026 04:16:38 PM: DEBUG: meineProtokollFunktion Zeile:8 User:Ralph Das ist eine Debug-Level-Nachricht

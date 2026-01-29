@@ -4,5 +4,9 @@
 dataset = ["UPPER", 5, "Mixed Case", True, None]
 for d in dataset:
     match d:
+        case str() as s if s.isupper():
+            print(f"{d}: Upper")
+        case str():
+            print(f"{d}: Not Upper")
         case _:
             print(f"{d}: Something else")

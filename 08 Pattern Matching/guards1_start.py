@@ -37,11 +37,14 @@ shapes = [Circle(5), Square(4), Rectangle(4, 6),
 for shape in shapes:
     match shape:
         # TODO: add a pattern guard for Circle
-
+        case Circle(radius=r) if r >= 6:
+            print(f"Large Circle with area {shape.getarea()}")
         case Circle():
             print(f"Circle with area {shape.getarea()}")
         case Square():
             print(f"Square with area {shape.getarea()}")
+        case Rectangle(width= w, hight=h) if w == h:
+            print(f"Square Rectangle with area {shape.getarea()}")
         case Rectangle():
             print(f"Rectangle with area {shape.getarea()}")
         case _:
